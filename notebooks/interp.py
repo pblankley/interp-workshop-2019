@@ -32,7 +32,7 @@ class InputGrad:
         """
         self.model = model
         if isinstance(data, pd.DataFrame):
-            self.data_mat = data.as_matrix()
+            self.data_mat = data.values
             self.cols = data.columns
             # Mask that is true if categorical (binary) and false if not
             self.categorical = np.array([tuple(np.unique(self.data_mat[:,i]))==(0,1) for i in range(len(self.cols))])
