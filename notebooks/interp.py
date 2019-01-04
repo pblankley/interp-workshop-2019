@@ -32,6 +32,7 @@ class InputGrad:
         """
         self.model = model
         if isinstance(data, pd.DataFrame):
+            self.df = data
             self.data_mat = data.values
             self.cols = data.columns
             # Mask that is true if categorical (binary) and false if not
@@ -382,6 +383,8 @@ class InputGrad:
                         arXiv:1611.07634
         """
         # Get input gradient
+        # assert(point in self.df.index)
+        # idx_point = list(self.df.index).index(point)
         qgrad, cgrad = self._grad(point, h=h)
 
         if len(qgrad) < 2.0*num_top_preds:
