@@ -33,14 +33,13 @@ def load_data(dir_name):
 def subset_lc_data(dir_name, new_fn):
     quant_cols = ['loan_amnt', 'int_rate', 'annual_inc', 'dti', 'delinq_2yrs', 'fico_range_low',\
               'inq_last_6mths', 'mths_since_last_delinq', 'mths_since_last_record', 'open_acc', 'pub_rec',\
-              'revol_bal', 'revol_util', 'total_acc', 'policy_code', 'acc_now_delinq', 'tot_coll_amt',\
+              'revol_bal', 'revol_util', 'total_acc', 'acc_now_delinq', 'tot_coll_amt',\
               'tot_cur_bal', 'tax_liens', 'total_bal_ex_mort', 'total_bc_limit', 'total_il_high_credit_limit',\
               'installment']
 
     cat_cols = ['grade','emp_length', 'home_ownership','verification_status', 'zip_code', 'term',\
                 'earliest_cr_line','initial_list_status','disbursement_method', 'application_type']
 
-    other_cols = ['zip_code']
     response_col = 'loan_status'
 
     df = load_data(dir_name)
