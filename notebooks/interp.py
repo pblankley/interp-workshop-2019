@@ -1360,12 +1360,12 @@ class Lice():
         df_out[col] = xbins
 
         # Round our observation's real x to the closest x value in our grid
-        observation_x = df.iloc[observation,list(df.columns).index(col)]
+        observation_x = df.loc[observation,col]
         observation_i = np.abs(xbins - observation_x).argmin()
         observation_x_rounded = xbins[observation_i]
 
         # Predict observation at each feature value
-        df_observation_whatif = df.iloc[[observation]*len(xbins),:].reset_index(drop=True)
+        df_observation_whatif = df.loc[[observation]*len(xbins),:].reset_index(drop=True)
         df_observation_whatif.loc[:, col] = xbins
         df_out['observation'] = model.predict_proba(df_observation_whatif)[:, pred_class]
 
