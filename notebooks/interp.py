@@ -4,7 +4,6 @@ import pandas as pd
 import seaborn as sns
 import lime
 import lime.lime_tabular
-from mpld3 import fig_to_html
 from IPython.display import display
 from tqdm import tqdm
 from sklearn.utils import check_random_state
