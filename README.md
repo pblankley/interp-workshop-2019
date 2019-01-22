@@ -1,4 +1,4 @@
-# IACS ComputeFest - Interpretability and Fairness Workshop 2019
+# IACS ComputeFest 2019: Interpretability + Fairness Workshop
 
 ### Instructions 
 
