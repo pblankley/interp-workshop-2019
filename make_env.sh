@@ -1,4 +1,5 @@
 pip_install () {
+    pip install virtualenv==15.2.0
     virtualenv venv
     source venv/bin/activate
 
