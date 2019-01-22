@@ -7,10 +7,6 @@ import lime
 import lime.lime_tabular
 from sklearn.utils import check_random_state
 from sklearn.neighbors import BallTree
-import matplotlib
-if os.environ.get('DISPLAY', '') == '':
-    print('no display found. Using non-interactive Agg backend')
-    matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
