@@ -2,7 +2,7 @@
 
 <br>
 
-# IACS ComputeFest 2019: <br> Interpretability + Fairness Workshop
+# ComputeFest 2019: Interpretability + Fairness Workshop
 
 ### Instructions 
 
