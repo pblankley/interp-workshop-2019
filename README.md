@@ -1,4 +1,4 @@
-<p align="center"><img width="50%" src="data/iacs-logo.jpg" /></p>
+<p align="center"><img width="80%" src="data/iacs-logo.jpg" /></p>
 
 <br>
 
