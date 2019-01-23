@@ -237,7 +237,7 @@ class Lice():
                     distance_from_observation = abs(
                         observation_baseline - df_out.loc[observation_i, y_col]) / baseline_scale_factor
                     ax.plot(df_out[col], df_out[y_col],
-                            color=cm.ocean(0.7 * (1 - int(y_col) / 100.)) if quantile_colorplot else '#1A4E5D',
+                            color=plt.cm.ocean(0.7 * (1 - int(y_col) / 100.)) if quantile_colorplot else '#1A4E5D',
                             alpha=max(1 - distance_from_observation, 0.25) if closeness_alphaplot else 0.5,
                             linewidth=1)
 
