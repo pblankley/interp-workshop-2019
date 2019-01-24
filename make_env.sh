@@ -1,6 +1,6 @@
 pip_install () {
     pip install virtualenv==15.2.0
-    virtualenv venv
+    virtualenv -p python3.6 venv
     source venv/bin/activate
 
     pip install -r requirements.txt
