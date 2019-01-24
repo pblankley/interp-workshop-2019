@@ -8,11 +8,11 @@
 
 We cite most of our resources in the slide deck and the notebook, but another key resource in developing this material is this online [book](https://christophm.github.io/interpretable-ml-book/) on interpretability.
 
-### Instructions 
+### Instructions: 
+
+Note: You must have Python 3.6
 
 Install with the following steps:
-
-Note: You must have Python 3.6:
 
 ```
 $ git clone https://github.com/pblankley/interp-workshop-2019.git
