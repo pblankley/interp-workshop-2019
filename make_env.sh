@@ -11,7 +11,7 @@ pip_install () {
 start_jupyter() {
     source venv/bin/activate
 
-    jupyter notebook ./notebooks/pb_interp_workshop.ipynb
+    jupyter notebook ./notebooks/student_interp_workshop.ipynb
 }
 
 main () {
