@@ -11,7 +11,7 @@ pip_install () {
 start_jupyter() {
     source venv/bin/activate
 
-    jupyter notebook ./notebooks/student_tuesday_workshop_full.ipynb
+    jupyter notebook ./notebooks/thursday_workshop_full.ipynb
 }
 
 main () {
